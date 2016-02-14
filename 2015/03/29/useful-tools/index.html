@@ -1,0 +1,765 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222222">
+<meta name="msapplication-navbutton-color" content="#222222">
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="阅读笔记," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.0" />
+
+
+
+
+
+
+<meta name="description" content="谷歌应用商店的一个很好用开源小工具，CopyURL.可以将所有打开的标签页的URL copy出来，也可以从文档中copyN个地址，一次性用多个标签打开。苹果的健康APP对我也很有用，几乎强迫症了，每天步伐数没有超过1w就不舒服。还有很多其他功能，管理健康数据。
+图表工具：首推highcharts官网：http://www.highcharts.com/demo/几乎可以满足大部分图表需求，bigg">
+<meta property="og:type" content="article">
+<meta property="og:title" content="一些好用的(图表)工具">
+<meta property="og:url" content="http://candyearead.github.io/2015/03/29/useful-tools/index.html">
+<meta property="og:site_name" content="素心之流光碎语">
+<meta property="og:description" content="谷歌应用商店的一个很好用开源小工具，CopyURL.可以将所有打开的标签页的URL copy出来，也可以从文档中copyN个地址，一次性用多个标签打开。苹果的健康APP对我也很有用，几乎强迫症了，每天步伐数没有超过1w就不舒服。还有很多其他功能，管理健康数据。
+图表工具：首推highcharts官网：http://www.highcharts.com/demo/几乎可以满足大部分图表需求，bigg">
+<meta property="og:image" content="http://candyearead.github.io/2015/03/29/useful-tools/MGraph.jpg">
+<meta property="og:updated_time" content="2015-12-27T10:16:46.385Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="一些好用的(图表)工具">
+<meta name="twitter:description" content="谷歌应用商店的一个很好用开源小工具，CopyURL.可以将所有打开的标签页的URL copy出来，也可以从文档中copyN个地址，一次性用多个标签打开。苹果的健康APP对我也很有用，几乎强迫症了，每天步伐数没有超过1w就不舒服。还有很多其他功能，管理健康数据。
+图表工具：首推highcharts官网：http://www.highcharts.com/demo/几乎可以满足大部分图表需求，bigg">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: '[object Object]',
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 6230245173587084000,
+      author: '博主'
+    }
+  };
+</script>
+
+  <title> 一些好用的(图表)工具 | 素心之流光碎语 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-68283716-2', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">素心之流光碎语</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">Together through the highs and lows.</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu ">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+      
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                一些好用的(图表)工具
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2015-03-29T19:37:06+08:00" content="2015-03-29">
+              2015-03-29
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2015/03/29/useful-tools/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/03/29/useful-tools/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+          <span id="busuanzi_container_page_pv"> | 热度 <span id="busuanzi_value_page_pv"></span> ℃</span>
+        
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>谷歌应用商店的一个很好用开源小工具，CopyURL.可以将所有打开的标签页的URL copy出来，也可以从文档中copyN个地址，一次性用多个标签打开。<br>苹果的健康APP对我也很有用，几乎强迫症了，每天步伐数没有超过1w就不舒服。还有很多其他功能，管理健康数据。</p>
+<p>图表工具：<br>首推highcharts<br>官网：<a href="http://www.highcharts.com/demo/" target="_blank" rel="external">http://www.highcharts.com/demo/</a><br>几乎可以满足大部分图表需求，bigger瞬时高起来了有没有？</p>
+<p>不过它没有满足我画通讯流程图的要求，所以又找到了StartUML， 它除了画图，可以做的事情更多。<br><a id="more"></a><br>官网上有每个版本的Release Note<br><a href="http://staruml.io/download" target="_blank" rel="external">http://staruml.io/download</a></p>
+<p>另外有个链接总结了22个免费的图表工具。我大概看了下， 各有特点。<br>链接源自开源中国社区， 地址：<br><a href="http://www.oschina.net/news/28942/22-free-tools-for-charts-diagrams-and-flowcharts" target="_blank" rel="external">http://www.oschina.net/news/28942/22-free-tools-for-charts-diagrams-and-flowcharts</a><br>评论里还有人提到<code>jasperreports（很专业的报表工具，貌似收费）和ProcessOn（完全免费，可多人在线协作）</code></p>
+<p>22 个免费的图表、流程图工具<br>饼图、柱状图、线图和许多其他的图形是非常重要的用来表示数据和沟通的信息，并可展示两个实体之间的关系。而这些图形如果用在 Web 上则有助于吸引访客的注意力，并有效地解释相关数据。 在这里我们推荐一些很棒的工具，你可以通过点击创建非常直观的设计流程图和图表。</p>
+<h1 id="Gliffy"><a href="#Gliffy" class="headerlink" title="Gliffy"></a>Gliffy</h1><p>使用 Gliffy 可创建非常漂亮的各种图表、流程图、平面图和技术图纸等等。</p>
+<h1 id="Highcharts"><a href="#Highcharts" class="headerlink" title="Highcharts"></a>Highcharts</h1><p>Highcharts是一个制作图表的纯Javascript类库，主要特性如下：<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">兼容性：兼容当今所有的浏览器，包括iPhone、IE和火狐等等；</span><br><span class="line">对个人用户完全免费；</span><br><span class="line">纯JS，无BS；</span><br><span class="line">支持大部分的图表类型：直线图，曲线图、区域图、区域曲线图、柱状图、饼装图、散布图；</span><br><span class="line">跨语言：不管是PHP、Asp.net还是Java都可以使用，它只需要三个文件：一个是Highcharts的核心文件highcharts.js，还有<span class="tag">a</span> <span class="tag">canvas</span> emulator <span class="keyword">for</span> IE和Jquery类库或者MooTools类库；</span><br><span class="line">提示功能：鼠标移动到图表的某一点上有提示信息；</span><br><span class="line">放大功能：选中图表部分放大，近距离观察图表；</span><br><span class="line">易用性：无需要特殊的开发技能，只需要设置一下选项就可以制作适合自己的图表；</span><br><span class="line">时间轴：可以精确到毫秒；</span><br></pre></td></tr></table></figure></p>
+<h1 id="Barchart"><a href="#Barchart" class="headerlink" title="Barchart"></a>Barchart</h1><p>这是一个用来创建柱状图的工具。</p>
+<h1 id="CSS_Chart_Generator"><a href="#CSS_Chart_Generator" class="headerlink" title="CSS Chart Generator"></a>CSS Chart Generator</h1><p>完全使用 Flash 和 XML 构建的图表生成工具。</p>
+<h1 id="Grapher"><a href="#Grapher" class="headerlink" title="Grapher"></a>Grapher</h1><p>非常易用，可点击箭头来创建列，点击标题和数字来修改标题和单位，可右键打印图表。</p>
+<h1 id="Hohli_Charts"><a href="#Hohli_Charts" class="headerlink" title="Hohli Charts"></a>Hohli Charts</h1><p>生成动态图表</p>
+<h1 id="MGraph"><a href="#MGraph" class="headerlink" title="MGraph"></a>MGraph</h1><p>Ajax MGraph 基于 <code>Prototype.js</code> 的 Ajax 图表库，纯 XHTML 和 CSS 实现。</p>
+<img src="/2015/03/29/useful-tools/MGraph.jpg" alt="MGraph.jpg" title="">
+<h1 id="Flowchart"><a href="#Flowchart" class="headerlink" title="Flowchart"></a>Flowchart</h1><p>Flowchart.com 是一个在线多用户、实时协作的流程图服务</p>
+<h1 id="Online_Chart_Generator"><a href="#Online_Chart_Generator" class="headerlink" title="Online Chart Generator"></a>Online Chart Generator</h1><p>这是一个最棒的在线图表生成工具，支持三维的图表</p>
+<h1 id="DIY_Chart"><a href="#DIY_Chart" class="headerlink" title="DIY Chart"></a>DIY Chart</h1><p>DIY (Do it yourself) Chart 是一个基于 Web 的简单但强大的在线工具，用来创建交互式的 Web 图表。</p>
+<h1 id="Xml/Swf_Charts"><a href="#Xml/Swf_Charts" class="headerlink" title="Xml/Swf Charts"></a>Xml/Swf Charts</h1><p>XML/SWF Charts 是一个简单但很强大的创建各种吸引人的图表的工具，使用 XML 作为数据传输，使用 Flash 做图表展示。</p>
+<h1 id="Cacoo"><a href="#Cacoo" class="headerlink" title="Cacoo"></a>Cacoo</h1><p>Cacoo 是一个用户友好的在线图形绘制工具，可创建各种 UML、线框以及网络图。可免费使用！</p>
+<h1 id="ChartDemo"><a href="#ChartDemo" class="headerlink" title="ChartDemo"></a>ChartDemo</h1><p>这里包含很多种形式的图表，无需附加插件，无需图片支持。</p>
+<h1 id="ChartGizmo"><a href="#ChartGizmo" class="headerlink" title="ChartGizmo"></a>ChartGizmo</h1><p>你可通过 ChartGizmo 的免费帐号为网站创建各种图表。</p>
+<h1 id="CreateAGraph"><a href="#CreateAGraph" class="headerlink" title="CreateAGraph"></a>CreateAGraph</h1><h1 id="DrawAnywhere"><a href="#DrawAnywhere" class="headerlink" title="DrawAnywhere"></a>DrawAnywhere</h1><p>Draw Anywhere 提供在线的组织结构图、调度和展示图的绘制工具</p>
+<h1 id="Piecolor"><a href="#Piecolor" class="headerlink" title="Piecolor"></a>Piecolor</h1><p>一个简单的工具用来创建各种效果的饼图</p>
+<h1 id="Online_chart_tool"><a href="#Online_chart_tool" class="headerlink" title="Online chart tool"></a>Online chart tool</h1><h1 id="YEd_Graph_Editor"><a href="#YEd_Graph_Editor" class="headerlink" title="YEd Graph Editor"></a>YEd Graph Editor</h1><p>yed 是一个画流程图的工具,不是开源软件，但是可以让你摆脱 Microsoft Office Visio  ,也有linux下的版本，整个程序是java开发的，确实比较强大。</p>
+<h1 id="Pie_Chart_Maker"><a href="#Pie_Chart_Maker" class="headerlink" title="Pie Chart Maker"></a>Pie Chart Maker</h1><p>Pie Chart Maker 是一个免费的构建饼图的工具</p>
+<h1 id="Fooplot"><a href="#Fooplot" class="headerlink" title="Fooplot"></a>Fooplot</h1><p>Plot and graph equations online; lines, circles, parabolas, cubics.</p>
+<h1 id="SmartDraw"><a href="#SmartDraw" class="headerlink" title="SmartDraw"></a>SmartDraw</h1><p>SmartDraw 是一个桌面软件用来绘制各种图表、UML图等。</p>
+<p>via <a href="http://smashinghub.com/22-useful-free-tools-for-creating-charts-diagrams-and-flowcharts.htm" target="_blank" rel="external">smashinghub</a></p>
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/阅读笔记/" rel="tag">#阅读笔记</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2014/09/15/english-learning/" rel="next" title="英语学习网站收集">
+                <i class="fa fa-chevron-left"></i> 英语学习网站收集
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2015/03/29/this-weekend/" rel="prev" title="This Weekend">
+                This Weekend <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2015/03/29/useful-tools/"
+           data-title="一些好用的(图表)工具" data-url="http://candyearead.github.io/2015/03/29/useful-tools/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.jpg"
+               alt="素心兰" />
+          <p class="site-author-name" itemprop="name">素心兰</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">76</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          <div class="site-state-item site-state-categories">
+            
+              <span class="site-state-item-count">0</span>
+              <span class="site-state-item-name">分类</span>
+              
+          </div>
+
+          <div class="site-state-item site-state-tags">
+            <a href="/tags">
+              <span class="site-state-item-count">5</span>
+              <span class="site-state-item-name">标签</span>
+              </a>
+          </div>
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="" target="_blank">
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="" target="_blank">
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="" target="_blank">
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="" target="_blank">
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="" target="_blank">
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="" target="_blank">
+                  
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator">
+            <i class="fa fa-angle-double-up"></i>
+          </div>
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Gliffy"><span class="nav-number">1.</span> <span class="nav-text">Gliffy</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Highcharts"><span class="nav-number">2.</span> <span class="nav-text">Highcharts</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Barchart"><span class="nav-number">3.</span> <span class="nav-text">Barchart</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#CSS_Chart_Generator"><span class="nav-number">4.</span> <span class="nav-text">CSS Chart Generator</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Grapher"><span class="nav-number">5.</span> <span class="nav-text">Grapher</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Hohli_Charts"><span class="nav-number">6.</span> <span class="nav-text">Hohli Charts</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#MGraph"><span class="nav-number">7.</span> <span class="nav-text">MGraph</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Flowchart"><span class="nav-number">8.</span> <span class="nav-text">Flowchart</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Online_Chart_Generator"><span class="nav-number">9.</span> <span class="nav-text">Online Chart Generator</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#DIY_Chart"><span class="nav-number">10.</span> <span class="nav-text">DIY Chart</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Xml/Swf_Charts"><span class="nav-number">11.</span> <span class="nav-text">Xml/Swf Charts</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Cacoo"><span class="nav-number">12.</span> <span class="nav-text">Cacoo</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ChartDemo"><span class="nav-number">13.</span> <span class="nav-text">ChartDemo</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ChartGizmo"><span class="nav-number">14.</span> <span class="nav-text">ChartGizmo</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#CreateAGraph"><span class="nav-number">15.</span> <span class="nav-text">CreateAGraph</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#DrawAnywhere"><span class="nav-number">16.</span> <span class="nav-text">DrawAnywhere</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Piecolor"><span class="nav-number">17.</span> <span class="nav-text">Piecolor</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Online_chart_tool"><span class="nav-number">18.</span> <span class="nav-text">Online chart tool</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#YEd_Graph_Editor"><span class="nav-number">19.</span> <span class="nav-text">YEd Graph Editor</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Pie_Chart_Maker"><span class="nav-number">20.</span> <span class="nav-text">Pie Chart Maker</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Fooplot"><span class="nav-number">21.</span> <span class="nav-text">Fooplot</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#SmartDraw"><span class="nav-number">22.</span> <span class="nav-text">SmartDraw</span></a></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator">
+            <i class="fa fa-angle-double-down"></i>
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2015 - 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="icon-next-heart fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">素心兰</span>
+</div>
+      </div>
+    </footer>
+
+    <div class="back-to-top"></div>
+  </div>
+
+  
+
+
+  
+
+
+
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.0"></script>
+
+
+
+  
+  
+<script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.0"></script>
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 1 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = NexT.utils.escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    NexT.motion.middleWares.sidebar = function () {
+      var $tocContent = $('.post-toc-content');
+
+      if (CONFIG.sidebar === 'post') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          NexT.utils.displaySidebar();
+        }
+      }
+    };
+  });
+</script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.0"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"candyearead"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+      <script src="/vendors/ua-parser-js/dist/ua-parser.min.js"></script>
+      <script src="/js/src/hook-duoshuo.js"></script>
+    
+  
+
+
+
+
+
+  
+  
+
+  
+  
+
+
+</body>
+</html>
